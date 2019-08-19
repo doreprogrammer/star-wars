@@ -5,7 +5,7 @@
 <p>Existe un historial de páginas de peliculas visitadas</p>
 <p>He realizado una página con un carousel con personajes de starwars</p>
 <br>
-<h2>Justificación de la prueba</h2">
+<h2>Justificación de la prueba</h2>
  <p>He obtado por realizar llamadas a la API de starwars realizando peticiones GET y obteniendo los datos en JSON parseandolos y mostrando los datos en las vistas con la nomenclatura propìa de los .blade </p>
 <p>Esta opción carece de BBDD ya que uso unicamente llamadas a la API y guardo el historial en las Sessions. Esto hace que los datos siempre estén actualizados, sin embargo posee un Backend bastante excueto, al carecer de modelos, bbdd, etc. </p>
 <p>En un principio pensé en usar los seeder para llenar una base de datos local y así crear una app "tradicional", con los datos de SWAPI, pero la duplicidad de datos siempre que se pueda es mejor evitar.</p>
