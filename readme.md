@@ -1,4 +1,6 @@
 <h1>Star Wars Api Tests</h1>
+
+![image](https://user-images.githubusercontent.com/54268454/63302853-7f8d3680-c2de-11e9-93bc-0a2273c206b8.png)
 <p>He realizado el test en la tecnología Laravel</p>
 <p>El buscador está realizado con Ajax y realiza las llamadas en tiempo real</p>
 <p>El buscador (en inglés, ya que la api devuelve los datos en inglés) muestra películas que a su vez son enlaces a páginas de detalle</p>
