@@ -1,0 +1,75 @@
+/* Navbar */
+
+.navbar-brand{
+    .logo{
+        width: 120px;
+    }
+}
+
+/* Films */
+
+.main-header{
+    top: 15%;
+    z-index: 999;
+
+    h1{
+        font-size: 7rem;
+        text-shadow: -2px 2px 2px #000000;
+    }
+    h2{
+        text-shadow: -2px 2px 2px #000000;
+    }
+}
+.searcher-container{
+    background-image: url("/images/starwars-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.characters-container{
+    background-image: url("/images/starwars-characters.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+    .film-img{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 170px;
+        height: 250px;     
+    }
+    
+    .episode-1{
+        background-image: url("/images/ep-1.jpg");
+    }
+    .episode-2{
+        background-image: url("/images/ep-2.jpg");
+    }
+    .episode-3{
+        background-image: url("/images/ep-3.jpg");
+    }
+    .episode-4{
+        background-image: url("/images/ep-4.jpg");
+    }
+    .episode-5{
+        background-image: url("/images/ep-5.jpg");
+    }
+    .episode-6{
+        background-image: url("/images/ep-6.jpg");
+    }
+    .episode-7{
+        background-image: url("/images/ep-7.jpg");
+    }
+
+.episode-container{
+    background-image: url("/images/bg-stars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
