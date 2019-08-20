@@ -1,3 +1,22 @@
+<h1>Star Wars Api Tests</h1>
+
+![image](https://user-images.githubusercontent.com/54268454/63302853-7f8d3680-c2de-11e9-93bc-0a2273c206b8.png)
+<p>He realizado el test en la tecnología Laravel</p>
+<p>El buscador está realizado con Ajax y realiza las llamadas en tiempo real</p>
+<p>El buscador (en inglés, ya que la api devuelve los datos en inglés) muestra películas que a su vez son enlaces a páginas de detalle</p>
+<p>Existe un historial de páginas de peliculas visitadas</p>
+<p>He realizado una página con un carousel con personajes de starwars</p>
+<br>
+<h2>Justificación de la prueba</h2>
+ <p>He obtado por realizar llamadas a la API de starwars realizando peticiones GET y obteniendo los datos en JSON parseandolos y mostrando los datos en las vistas con la nomenclatura propìa de los .blade </p>
+<p>Esta opción carece de BBDD ya que uso unicamente llamadas a la API y guardo el historial en las Sessions. Esto hace que los datos siempre estén actualizados, sin embargo posee un Backend bastante excueto, al carecer de modelos, bbdd, etc. </p>
+<p>En un principio pensé en usar los seeder para llenar una base de datos local y así crear una app "tradicional", con los datos de SWAPI, pero la duplicidad de datos (siempre que se pueda) es mejor evitar.</p>
+<p>Para el front he usado Bootstrap 4, FontAwesome, Jquery y Precompilador SCSS </p>
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
