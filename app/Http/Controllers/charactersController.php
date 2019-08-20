@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
-class charactersController extends Controller
+class CharactersController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -3,29 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use GuzzleHttp\Client;
+
+
+use App\Films;
 use Session;
 
-class filmsController extends Controller
+class FilmsController extends Controller
 {
 
-    private $films;
+    protected $films;
 
-    /**
-     * Llamadas a la api de star wars de films
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function getFilms()
-    {         
-    	$client = new Client();
-    	$response = $client->request('GET', 'https://swapi.co/api/films/');
-    	$statusCode = $response->getStatusCode();
-        // $films = $response->getBody()->getContents();
-        $films = json_decode($response->getBody());
-        $films = $films->results; 
-        return $films;
+
+    public function __construct(Films $films)
+    {  
+        $this->films = $films;
+
     }
+
+
 
     /**
      * Display peliculas.
@@ -34,7 +29,8 @@ class filmsController extends Controller
      */
     public function showFilms()
     {
-        $films=$this->getFilms();
+
+        $films = $this->films->get();
         return view('films' , compact("films"));
     }
     
@@ -48,7 +44,7 @@ class filmsController extends Controller
     public function showEpisode($id)
     {
         
-        $films=$this->getFilms();
+        $films = $this->films->get();
 
         foreach($films as $episode)
         {
@@ -82,11 +78,13 @@ class filmsController extends Controller
      */     
     public function searchFilms(Request $request)
     {
-        if($request->ajax())
-        {
-            $films = $this->getFilms();
-            $output="";
+      
 
+        if($request->ajax())
+        {    
+            $films = $this->films->get();
+            $output="";
+            
             foreach($films as $episode)
             {
                 //titulo de la pelicula

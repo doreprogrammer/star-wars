@@ -12,7 +12,8 @@
 */
 
 
-Route::get('/search','filmsController@searchFilms');
-Route::get('/', 'filmsController@showFilms');
-Route::get('episode/{id}', 'filmsController@showEpisode');
-Route::get('/characters', 'charactersController@showCharacters');
+
+Route::get('/', 'FilmsController@showFilms');
+Route::get('episode/{id}', 'FilmsController@showEpisode');
+Route::get('/characters', 'CharactersController@showCharacters');
+Route::get('/search','FilmsController@searchFilms');
