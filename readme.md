@@ -26,6 +26,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+<h2>Instrucciones</h2>
+<p>Instalar composer y laravel con todas las dependencias</p>
+<p>Crear el archivo .env con el .env.example</p>
+<p>generar las keys <code>php artisan key:generate</code></p>
+<p>levantar el server</p>
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
